@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<title>Zakład Kamieniarksi MIR-KAM</title>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{url_for('static', filename='głowny.js')}}"></script>
+</head>
+
+	<header class="header">
+
+      <h1 class="logo"><a href="#">MIR-KAM Zakład Kamieniarski</a></h1>
+
+
+      <ul class="main-nav">
+          <li><a href="#">Oferta</a></li>
+          <li><a href="#">Nasze realizacje</a></li>
+          <li><a href="#">O nas</a></li>
+          <li><a href="#">Kontakt: (TEL - 600 838 784)</a></li>
+      </ul>
+	</header>
+
+
+
+<div class="opis">
+<div class="image-left">
+<!--	<image style="width:700px; heigth:450px;" src="{{url_for('static',filename = 'nagrobki.png')}}" >-->
+	<div>
+		<p>Nasza firma zlokalizowana jest w woj. Dolnośląskim we wsi Koźmice (okolice Ząbkowic Śląskich). Świadczymy już usługi kamieniarskie od 2003 roku. Nasze produkty wykonujemy z wysokiej jakości granitów poliskich jak i zagranicznych (Impala, Szwed, Orion, Strzelin, Vanga itp.)</p>
+	</div>
+</div>
+
+<div class="image-right">
+	<div>
+		<p>Wykonujemy:</p>
+        <p>- Nagrobki</p>
+        <p>- Schody</p>
+        <p>- Blaty i parapety</p>
+        <p>- Książki i poduszki napisowe</p>
+	</div>
+</div>
+</div>
+
+
+<div class="slajdy">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+
+<image class="mySlides w3-animate-fading" src="{{url_for('static',filename = 'nagrobek1.jpg')}}" >
+<image class="mySlides w3-animate-fading" src="{{url_for('static',filename = 'nagrobek2.jpg')}}" >
+<image class="mySlides w3-animate-fading" src="{{url_for('static',filename = 'nagrobek3.jpg')}}" >
+<image class="mySlides w3-animate-fading" src="{{url_for('static',filename = 'nagrobek4.jpg')}}" >
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 9000);
+}
+</script>
+
+</body>
+</div>
