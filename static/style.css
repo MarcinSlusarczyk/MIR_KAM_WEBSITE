@@ -431,3 +431,53 @@ opacity: 0.8;
  font-size: 1vw;
  font-weight:bold;
  }
+
+
+.zdjecie
+{
+margin-right:3vw;
+padding: 2vw;
+height:45vw;
+width:30vw;
+
+}
+
+.box_oferta
+{
+margin:auto;
+margin-left:2vw;
+margin-bottom:1vw;
+font-weight: bold;
+font-size: 1vw;
+text-align:center;
+height:55vw;
+width:30vw;
+border: 1px solid black;
+padding-top: .5em;
+padding-bottom: .5em;
+border: 1px solid #a2a2a2;
+background-color: #f4f4f4;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius:60px;
+display: inline-block;
+width: 30%;
+}
+
+.info_box
+{
+margin-top:-0.5vw;
+border: 1px solid black;
+padding-top: .1em;
+padding-bottom: .1em;
+border: 1px solid #a2a2a2;
+background-color: #e3e1e1;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+
+
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+}

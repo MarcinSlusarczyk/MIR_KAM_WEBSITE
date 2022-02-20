@@ -21,4 +21,13 @@
 <div class="opis_sekcji">NAGROBKI</div>
 
 
-
+{% for produkt in produkty: %}
+    <div class="box_oferta">
+        <div class="info_box">
+    <p>NR PRODUKTU: {{produkt.split(";")[1].strip()}}</p>
+    <p>RODZAJ GRANITU: {{produkt.split(";")[2].strip()}}</p>
+    <p>METRAŻ: {{produkt.split(";")[3].strip()}}</p>
+            </div>
+<img class="zdjecie" src="{{produkt.split(";")[4].strip()}}" </img>
+</div>
+{% endfor %}
