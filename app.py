@@ -3,7 +3,7 @@ from flask import render_template
 
 app = Flask(__name__)
 
-path = 'static//'
+path = '/home/mirkam/mysite/static/'
 file = 'baza_produktow.csv'
 
 @app.route('/')
